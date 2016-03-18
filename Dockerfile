@@ -7,8 +7,8 @@ ADD https://releases.hashicorp.com/consul/0.6.4/consul_0.6.4_linux_amd64.zip /tm
 RUN cd /bin && unzip /tmp/consul.zip && chmod +x /bin/consul && rm /tmp/consul.zip
 
 EXPOSE 8300 8301 8301/udp 8302 8302/udp 8400 8500 8600 8600/udp
-ADD https://releases.hashicorp.com/consul/0.6.4/consul_0.6.4_web_ui.zip /tmp/webui.zip
-RUN cd /tmp && unzip webui.zip && mv dist /ui && rm webui.zip
+ADD https://releases.hashicorp.com/consul/0.6.4/consul_0.6.4_web_ui.zip /ui/webui.zip
+RUN cd /ui && unzip webui.zip && rm webui.zip
 ADD ./config /config/
 ADD entrypoint.sh /
 
