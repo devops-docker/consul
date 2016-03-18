@@ -1,0 +1,12 @@
+{
+  "client_addr": "0.0.0.0",
+  "ui_dir": "/ui",
+  "data_dir": "/data",
+  "server": true,
+  "dns_config": {
+    "allow_stale": false
+  },
+  "ports":{
+    "dns": 53
+  }
+}
