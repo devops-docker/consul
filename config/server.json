@@ -6,7 +6,4 @@
   "dns_config": {
     "allow_stale": false
   },
-  "ports":{
-    "dns": 53
-  }
 }
