@@ -7,5 +7,5 @@
   "server": true,
   "dns_config": {
     "allow_stale": false
-  },
+  }
 }
