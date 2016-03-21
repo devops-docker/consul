@@ -1,7 +1,9 @@
 {
   "client_addr": "0.0.0.0",
+  "ui": true,
   "ui_dir": "/ui",
   "data_dir": "/data",
+  "leave_on_terminate": true,
   "server": true,
   "dns_config": {
     "allow_stale": false
